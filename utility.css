@@ -1,0 +1,78 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+/* in which ever element we want to use flex we can write this in class*/
+
+.flex{            
+    display: flex;
+}
+
+  /*utility class means if we want to use flex then we can just write flex in class name*/
+
+.justify-center{
+    justify-content: center;
+}
+
+.item-center{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.invert{  
+    filter: invert(1);
+     /*invert means black color iamge ti white and whote to black*/
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+/* For Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 12px;             /* Width of vertical scrollbar */
+    height: 12px;            /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;     /* Dark background of scrollbar track */
+    border-radius: 6px;       /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;   /* Dark gray thumb */
+    border-radius: 6px;       /* Rounded corners */
+    border: 3px solid #1e1e1e; /* Space around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;   /* Lighter on hover */
+}
+
+/* Optional: scrollbar corner (for horizontal + vertical intersection) */
+::-webkit-scrollbar-corner {
+    background: #1e1e1e;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;          /* auto, thin, none */
+    scrollbar-color: #555 #1e1e1e; /* thumb color, track color */
+}
